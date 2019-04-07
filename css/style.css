@@ -1,191 +1,431 @@
-body {
-  background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/27658072_768361028122_7153470174501509054_n.jpg?oh=0276e6ac56302365fd88e97ce7b24598&oe=5B42C399");
-  background-attachment: fixed;
-}
+/* 
+color: #ecf0f1
+*/
 
-#demo {
-  background-position: top;
-}
 
-h2 {
-  font-family: "Brush Script MT", cursive;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26.4px;
+/* ----------------------------- */
+/* BASIC SETUP*/
+/* ----------------------------- */
 
-}
-
-h2 {
-  color: white
-}
-
-li{
-  display: inline-block;
-  color: white;
-}
-
-p{
-  color: white;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
+html {
+  background-color: #fff;
+  color: #555;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  }
 
-.button {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
 
-.container .btn {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  color: black;
-  font-size: 16px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  opacity: 0.5;
 }
 
-.cover-bg {
-  background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/27750853_768489670322_6990706977889488810_n.jpg?oh=6e1dbf953817093267714d6945fb0097&oe=5B088993");
-  background-size: cover;
+  /* ----------------------------- */
+  /* REUSABLE COMPONENTS*/
+  /* ----------------------------- */
+
+  .row {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
+  section {
+    padding: 80px 0;
+  }
 
-img {
-  padding: 15px;
-}
+  .box {
+    padding: 1%;
+  }
 
-.form-style-2{
-    max-width: 500px;
-    padding: 20px 12px 10px 20px;
-    font: 13px Arial, Helvetica, sans-serif;
-}
-.form-style-2-heading{
-    font-weight: bold;
-    font-style: italic;
-    border-bottom: 2px solid #ddd;
-    margin-bottom: 20px;
-    font-size: 15px;
-    padding-bottom: 3px;
-}
-.form-style-2 label{
-    display: block;
-    margin: 0px 0px 15px 0px;
-}
-.form-style-2 label > span{
-    width: 100px;
-    font-weight: bold;
-    float: left;
-    padding-top: 8px;
-    padding-right: 5px;
-}
-.form-style-2 span.required{
-    color:red;
-}
-.form-style-2 .tel-number-field{
-    width: 40px;
-    text-align: center;
-}
-.form-style-2 input.input-field, .form-style-2 .select-field{
-    width: 48%;
-}
-.form-style-2 input.input-field,
-.form-style-2 .tel-number-field,
-.form-style-2 .textarea-field,
- .form-style-2 .select-field{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border: 1px solid #C2C2C2;
-    box-shadow: 1px 1px 4px #EBEBEB;
-    -moz-box-shadow: 1px 1px 4px #EBEBEB;
-    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    padding: 7px;
-    outline: none;
-}
-.form-style-2 .input-field:focus,
-.form-style-2 .tel-number-field:focus,
-.form-style-2 .textarea-field:focus,
-.form-style-2 .select-field:focus{
-    border: 1px solid #0C0;
-}
-.form-style-2 .textarea-field{
-    height:100px;
-    width: 55%;
-}
-.form-style-2 input[type=submit],
-.form-style-2 input[type=button]{
-    border: none;
-    padding: 8px 15px 8px 15px;
-    background: black;
-    color: #fff;
-    box-shadow: 1px 1px 4px #DADADA;
-    -moz-box-shadow: 1px 1px 4px #DADADA;
-    -webkit-box-shadow: 1px 1px 4px #DADADA;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-}
-.form-style-2 input[type=submit]:hover,
-.form-style-2 input[type=button]:hover{
-    background: red;
-    color: #fff;
-}
+    /* ----- HEADINGS -----*/
 
-.fa {
-  font-size: 36px;
-  width: 36px;
-  text-align: center;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5  {
+  font-weight: 300;
+  text-transform: uppercase;
+
+  }
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
   text-decoration: none;
   }
 
-  .fa:hover {
-    opacity: 0.7;
-    color: red;
+h1::after {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #2f3640;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.h1 h1 {
+  text-decoration: none;
+}
+
+
+
+
+  /* ----- PARAGRAPHS -----*/
+
+  .long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    }
+
+    .box p {
+      font-size: 90%;
+      line-height: 145%;
+    }
+
+    /* ----- ICONS -----*/
+
+    .icon-big {
+      font-size: 350%;
+      display: block;
+      color: #2f3640;
+      margin-bottom: 10px;
+      text-indent: 10%;
+      flex-wrap: wrap;
+
+    }
+    .icon {
+      color: white;
+      font-size: 110%;
+      float: right;
+      margin-left: 15px;
+    } 
+
+
+  /* ----- BUTTONS -----*/
+
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
   }
 
-.fa-facebook {
-  color: black;
+.btn-full:link,
+.btn-full:visited {
+  background-color: #ecf0f1;
+  border: 1px solid #ecf0f1;
+  color: #000;
+  margin-right: 15px;
 }
 
-.fa-instagram {
-  color: black;
+.btn-ghost:link,
+.btn-ghost:visited {
+border: 1px solid #ecf0f1;
+color: #fff;
 }
 
-.fa-envelope {
-  color: black;
+.btn:hover,
+.btn:active {
+  background-color: #b1c2c6;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background: #f1f1f1f1;
+.btn-full:hover,
+.btn-full:active {
+ border: 1px solid #b1c2c6;
+ color: #000;
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 50px;
+.btn-ghost:hover,
+.btn-ghost:active {
+border: 1px solid #b1c2c6;
+color: #000;
+}
+
+.btn-services {
   text-align: center;
 }
 
-/* Next & previous buttons */
+/* ----------------------------- */
+/* HEADER*/
+/* ----------------------------- */
+
+
+header {
+    background-image:  url("images/styles3.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+
+.text-box {
+  position: relative;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  }
+
+
+ .row a {
+   text-decoration: none;
+ }
+ .main-nav h1 {
+   display: inline-block;
+   font-size: 110%;
+   font-family: 'Dancing Script', cursive;
+   text-transform: none;
+  
+ }
+
+
+  .main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    position: fixed;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+  }
+
+  .main-nav li a:hover,
+  .main-nav li a:active {
+    border-bottom: 2px solid #ecf0f1;
+  }
+
+  .header-compact nav {
+    color: #2f3640;
+}
+
+
+  /* ----------------------------- */
+  /* Styles*/
+  /* ----------------------------- */
+
+  .styles-showcase {
+    list-style: none;
+    width: 100%;
+
+  }
+
+  .styles-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+  }
+
+ .meal-photo {
+   width: 100%;
+   margin: 0;
+ }
+
+ .style-photo img {
+   width: 100%;
+   height: 60%;
+ }
+
+ 
+
+  /* ----------------------------- */
+  /* Carousel*/
+  /* ----------------------------- */
+      
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width: 100%;
+        border:1px solid #fff;
+        height: 560px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background-color: #fff;
+      }
+
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+
+      .mySlides {
+        display: none;
+      }
+      
+/* ----------------------------- */
+/* Section Settings*/
+/* ----------------------------- */
+
+  .section-styles {
+    padding: 0;
+  }
+
+/* ----------------------------- */
+/* Chat Box*/
+/* ----------------------------- */
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 30px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  border-radius: 20px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #005967;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 30px;
+}
+
+/* Add a background color to the cancel button */
+.form-container .cancel {
+  background-color: #555;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* ----------------------------- */
+/* Testimonial*/
+/* ----------------------------- */
+.section-testimonials {
+background-color: rgba(245, 245, 245, 1);
+width: 100%;
+}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1;
+}
+
+.myReviews {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -200,27 +440,23 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
 
-/* The dot/bullet/indicator container */
 .dot-container {
   text-align: center;
   padding: 20px;
   background: #ddd;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -232,13 +468,175 @@ img {
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
 .active, .dot:hover {
   background-color: #717171;
 }
 
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
+q {
+  font-style: italic;
+}
 
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.author {
+  color: cornflowerblue;
+}
+
+
+
+/* ----------------------------- */
+/* Form*/
+/* ----------------------------- */
+
+label {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.form-style-2-heading {
+  text-align: center;
+}
+
+/* ----------------------------- */
+/* Footer*/
+/* ----------------------------- */
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: #888;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+/* ----------------------------- */
+/* Price*/
+/* ----------------------------- */
+
+.section-prices {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 140px 0;
+
+}
+
+.card {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  background: linear-gradient(-45deg, #fe0847, #feae3f);
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 10px 15px;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+
+.col-sm-4:nth-child(1) .card,
+.col-sm-4:nth-child(1) .card .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #645bf6);
+}
+
+.col-sm-4:nth-child(2) .card,
+.col-sm-4:nth-child(2) .card .title .fa  {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.col-sm-4:nth-child(3) .card,
+.col-sm-4:nth-child(3) .card .title .fa  {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+  .title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+}
+
+.title h3 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.price {
+  position: relative;
+  z-index: 2;
+}
+
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+
+.option {
+  position: relative;
+  z-index: 2;
+}
+
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.card a {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color: #262620;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px;
+}
+
+.card a:hover {
+  text-decoration: none;
+
+}

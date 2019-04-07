@@ -1,83 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dre Styles</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   </head>
-   <body>
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+</head>
 
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
-         <a class="navbar-brand" href="..\Cover\index.html">DreStyles</a>
+<body>
+  <header class="header-compact nav">
+    <div class="row">
+      <nav class="topnav">
+        <ul class="main-nav">
+          <h1>Let Dre Style You</h1>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#reviews">Testimonials</a></li>
+          <li><a href="#contact">Style Me</a></li>
+          <li><a href="#"><ion-icon name="pricetag"></ion-icon></a></li>
+          <li><a href="#contact"><i class="icon ion-md-mail"></i></a></li>
+          <li><a href="https://www.instagram.com/let_dre_style_you/"><i class="icon ion-logo-instagram"></i></a></li>
+      </nav>
+      </ul>
+    </div>
+
+    </nav>
+
+    <div class="text-box">
+      <!-- <h1>Let Dre Style You</h1>  -->
+      <!-- <a class="btn btn-full" href="#">Portfolio</a>  -->
+      <!-- <a class="btn btn-ghost" href="#">Book Me</a>  -->
+    </div>
+
+  </header>
+
+  <section class="section-services" id="services">
+    <div class="row">
+      <h2>Services</h2>
+
+      <p class="long-copy">
+        Hi, I am Dre, your personal stylist at your service. I know you're always busy and have little to no time at all
+        to shop
+        for yourself. So let me style you! I'm really good at it, I promise!
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col span-1-of-4 box">
+        <i class="ion-ios-cart-outline icon-big"></i>
+        <h3>Personal Shopper</h3>
+        <p>
+          <!-- I offer personal styling and shopping for all ages including men, women, and kids. I will personally shop and style you based on your personality, liftstyle, and color palette. -->
+        </p>
+      </div>
+      <div class="col span-1-of-4 box">
+        <i class="ion-bowtie icon-big"></i>
+        <h3>Special Occasions</h3>
+        <p>
+          <!-- I know how stressful it can be to plan for a special event. Let me take the stress away and put together your attire for any special occasion. -->
+        </p>
+      </div>
+      <div class="col span-1-of-4 box">
+        <i class="ion-tshirt-outline icon-big"></i>
+        <h3>Wardrode Consultant</h3>
+        <p>
+          <!-- I will work personally with you to pick out your wardrode based on your needs, body type, and personal style. -->
+        </p>
+      </div>
+      <div class="col span-1-of-4 box">
+        <i class="ion-wand icon-big"></i>
+        <h3>Closet Revamp</h3>
+        <p>
+          <!-- My mission is to help you feel amazing in the clothes you already have in your closet. I will take away the things you shouldn't keep and show you several new looks with the things you already have. I will develop a new sense of style for you. -->
+        </p>
+      </div>
+    </div>
+  </section>
 
 
+  <section class="section-styles" id="portfolio">
+    <h2 class="port">Portfolio</h2>
+    <div class="row" id="carousel">
+      <div class="w3-concent w3-section">
+        <a href="#"><img class="mySlides" src="images/style9.png" id="item-1" /></a>
+        <a href="#"><img class="mySlides" src="images/style8.png" id="item-2" /></a>
+        <!-- <a href="#"><img class="mySlides" src="images/img9.PNG"  id="item-3" /></a> -->
+        <a href="#"><img class="mySlides" src="images/style7.PNG" id="item-4" /></a>
+        <a href="#"><img class="mySlides" src="images/img5.PNG" id="item-5" /></a>
+        <a href="#"><img class="mySlides" src="images/promstyle.PNG" id="item-12" /></a>
+        <a href="#"><img class="mySlides" src="images/img7.PNG" id="item-6" /></a>
+        <a href="#"><img class="mySlides" src="images/img12.PNG" id="item-7" /></a>
+        <a href="#"><img class="mySlides" src="images/img8.PNG" id="item-8" /></a>
+        <a href="#"><img class="mySlides" src="images/style6.png" id="item-9" /></a>
+        <a href="#"><img class="mySlides" src="images/style10.PNG" id="item-10" /></a>
+        <a href="#"><img class="mySlides" src="images/style5.PNG" id="item-11" /></a>
+        <a href="#"><img class="mySlides" src="images/img13.PNG" id="item-12" /></a>
+        <a href="#"><img class="mySlides" src="images/img4.PNG" id="item-12" /></a>
+        <!-- <a href="#"><img class="mySlides" src="images/img13.PNG" id="item-12" /></a> -->
+        <a href="#"><img class="mySlides" src="images/img2.PNG" id="item-12" /></a>
+        <!-- <a href="#"><img class="mySlides" src="images/img4.PNG" id="item-12" /></a> -->
+        <a href="#"><img class="mySlides" src="images/img14.PNG" id="item-12" /></a>
+        <a href="#"><img class="mySlides" src="images/style11.PNG" id="item-12" /></a>
 
-   <ul class="navbar-nav">
-     <li class="nav-item">
-       <a class="nav-link" href="..\index.html">Home</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href= "..\portfolio\index.html">Portfolio</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href= "..\mystyles\index.html">My Styles</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="..\services\index.html">Services</a>
-     </li>
-     <li clas="nav-item">
-       <a class="nav-link" href="..\contactme\index.html">Contact Me</a>
-     </li>
-  </ul>
-</nav>
+        <!--Next/Prev buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    </div>
+  </section>
 
-  <!-- Full-width slides/quotes -->
-  <div class="mySlides">
-    <q>Life Isn't Perfect, But Your Outfit Can Be!</q>
-    <p class="author">- Sharice Styles</p>
+  <section class="section-tesimonials" id="reviews">
+    <div class="row">
+      <h2>Testimonials</h2>
+      <div class="slideshow-container">
+        <div class="myReviews">
+          <q>Appreciate it bro 🔥🔥 you always have me A1!</q>
+          <p class="author">- @factz_2_fitness</p>
+        </div>
+        <div class="myReviews">
+          <q>You don't shy away from color - love it!</q>
+          <p class="author">- @designsbydeirdre</p>
+        </div>
+        <div class="myReviews">
+          <q>I REALLY APPRECIATE IT... AND EVEN THO I KNOW YOU... YOU STILL KEPT IT PROFESSIONALLY AND DIDN'T RUSH...
+            CAN'T WAIT TO WORK WITH YOU AGAIN</q>
+          <p class="author">- Marcus Fairbanks</p>
+        </div>
+        <!--Next/Prev buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-contact" id="contact">
+    <div class="row">
+      <h2>Style Me</h2>
+      <form action="https://formspree.io/drejay2k3@gmail.com" method="POST">
+        <div class="form-style-2">
+          <div class="form-style-2-heading">Provide your information</div>
+          <form action="" method="post">
+            <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field"
+                name="field1" value="" /></label>
+            <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field"
+                name="field2" value="" /></label>
+            <label for="field4"><span>Regarding</span><select name="field4" class="select-field"><br>
+                <option value="Style Me">Style Me</option>
+                <option value="Personal Shopper">Personal Shopper</option>
+                <option value="Special Occasion">Special Occasion</option>
+                <option value="Wardrode Consultant">Wardrode Consultant</option>
+                <option value="Closet Revamp">Closet Revamp</option>
+                <option value="General Question">General Question</option>
+              </select></label>
+            <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5"
+                class="textarea-field"></textarea></label>
+
+            <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+          </form>
+
+        </div>
+
+  </section>
+
+  <button class="open-button" onclick="openForm()">Click Here To Let Me Style You!</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h2>Let Me Style You!</h2>
+
+      <label for="msg"><b>What's up! I am available to answer any questions you may have.</b></label>
+      <textarea placeholder="Type message..." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="close" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
   </div>
 
-  <div class="mySlides">
-    <q>Style Is A Way To Say Who You Are Without Having To Speak.</q>
-    <p class="author">- Rachel Zoe</p>
-  </div>
+  <footer>
+    <div class="row">
+      <div class="footer">
+        <ul class="SocialLinks">
 
-  <div class="mySlides">
-    <q>Boys have Swagger, Men Have style, Gentlemen Have Character</q>
-    <p class="author">- Unknown</p>
-  </div>
-
-  <!-- Next/prev buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<!-- Dots/bullets/indicators -->
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-<center>
-<img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/27657185_768085066152_3525267441012530917_n.jpg?oh=5d1906bd0fe1bf825925b4954707f6fb&oe=5B3E7675" width="600" height="600"/>
-</center>
+          <a href="https://www.instagram.com/let_dre_style_you/"><i class="icon ion-logo-instagram"></i></a>
+          <a href="Drejay2k3@gmail.com"><i class="icon ion-md-mail"></i></a>
+          <!-- <a href="https://www.instagram.com/let_dre_style_you/?hl=en" class="fa fa-instagram"></a>
+      <a href="mailto:" drejay2k3@gmail.com class="fa fa-envelope"></a> -->
 
 
-
-<footer>
-<p>&copy; 2018 Dre Styles></p>
-</footer>
-
-
-<script type="text/javascript" src="home.js"></script>
-   </body>
+          <p>&copy; 2019 Let Dre Style You | Designed By: Rakesha McIntyre</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <script type="text/javascript" src="home.js"></script>
+</body>
